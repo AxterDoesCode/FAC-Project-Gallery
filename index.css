@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+} 
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+ .card{
+    border: 2px solid black;
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+ }
+
+ @media(min-width: 450px){
+    body{
+        color: red;
+        flex-direction: row;
+    }
+ }
+
+
