@@ -1,2 +1,12 @@
-// document.querySelector("body").innerHTML="<h1>blank</h1>"
-// console.log(document.querySelector("body").innerHTML)
+const buttons = document.querySelectorAll(".btn")
+const paragraphs = document.querySelectorAll("p")
+
+buttons.forEach((x, i) => {
+    x.addEventListener("click", () => {
+        if(paragraphs[i].classList.value){
+            paragraphs[i].classList.remove("hidden")
+        }else{
+            paragraphs[i].classList.add("hidden")
+        }
+    })
+})
